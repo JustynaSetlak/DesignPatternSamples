@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Facade
 {
@@ -6,16 +9,9 @@ namespace Facade
     {
         static void Main(string[] args)
         {
-            BlogService blogService = new BlogService();
-            var post = blogService.GetPost(1).Result;
-            Console.WriteLine("Title of first post:");
-            Console.WriteLine(post.Title);
-            Console.WriteLine("\n");
-
-            var postsCount = blogService.GetNumberOfPosts().Result;
-            Console.WriteLine("Number od posts:");
-            Console.WriteLine(postsCount);
-            Console.WriteLine("\n");
+            ApiService apiService = new ApiService(new HttpClient());
+            var response = apiService.Get("https://jsonplaceholder.typicode.com/posts/1").GetAwaiter().GetResult();
+            Console.WriteLine(response);
 
             Console.ReadKey();
         }
