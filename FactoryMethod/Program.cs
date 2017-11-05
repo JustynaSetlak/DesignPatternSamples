@@ -10,17 +10,17 @@ namespace FactoryMethod
         static void Main(string[] args)
         {
             IChocolateFactory chocolateFactory = new ChocolateFactory();
-            IChocolate darkChocolate = chocolateFactory.CreateChocolateInstance(MainIngredient.Cacao);
+            IChocolate darkChocolate = chocolateFactory.CreateChocolate(MainIngredient.Cacao);
             Console.WriteLine("Dark chocolate:");
             Console.WriteLine(darkChocolate.DescribeItself());
             Console.WriteLine("----------------------------");
 
-            IChocolate milkChocolate = chocolateFactory.CreateChocolateInstance(MainIngredient.Milk);
+            IChocolate milkChocolate = chocolateFactory.CreateChocolate(MainIngredient.Milk);
             Console.WriteLine("Milk chocolate:");
             Console.WriteLine(milkChocolate.DescribeItself());
             Console.WriteLine("----------------------------");
 
-            IChocolate nutsChocolate = chocolateFactory.CreateChocolateInstance(MainIngredient.Nuts);
+            IChocolate nutsChocolate = chocolateFactory.CreateChocolate(MainIngredient.Nuts);
             Console.WriteLine("Nuts chocolate:");
             Console.WriteLine(nutsChocolate.DescribeItself());
             Console.WriteLine("----------------------------");

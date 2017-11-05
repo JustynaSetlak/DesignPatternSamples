@@ -26,15 +26,10 @@ namespace Decorator.Pizza
         public void AddIngredient()
         {
             Ingredients.Add("pineapple");
-            foreach (var ingredient in _pizzaToBeDecorated.getIngredients())
+            foreach (var ingredient in _pizzaToBeDecorated.Ingredients)
             {
                 Ingredients.Add(ingredient);
             }
-        }
-
-        public List<string> getIngredients()
-        {
-            return Ingredients;
         }
     }
 }

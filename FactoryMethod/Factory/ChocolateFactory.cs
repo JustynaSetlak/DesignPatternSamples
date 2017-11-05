@@ -8,7 +8,7 @@ namespace FactoryMethod.Factory
 {
     public class ChocolateFactory : IChocolateFactory
     {
-        public IChocolate CreateChocolateInstance(MainIngredient ingredient)
+        public IChocolate CreateChocolate(MainIngredient ingredient)
         {
             IChocolate chocolate = null;
             switch (ingredient)
@@ -23,7 +23,7 @@ namespace FactoryMethod.Factory
                     chocolate = new NutsChocolate();
                     break;
                 default:
-                    throw new ArgumentNullException("ingredient", "Such ingredient does not exist");
+                    throw new InvalidOperationException("Such ingredient does not exist");
             }
             return chocolate;
         }

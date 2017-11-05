@@ -20,10 +20,5 @@ namespace Decorator.Pizza
         {
             return Cost;
         }
-
-        public List<string> getIngredients()
-        {
-            return Ingredients;
-        }
     }
 }

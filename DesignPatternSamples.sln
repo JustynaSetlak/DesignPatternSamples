@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{3FED1615-9CCB-47A2-8445-C614E7C2B8B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{3FED1615-9CCB-47A2-8445-C614E7C2B8B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{50F61273-7064-445D-855C-8B07F2D37E5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{50F61273-7064-445D-855C-8B07F2D37E5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{13645A1A-BFE5-4B5F-8D8E-5F7D55AC6654}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{13645A1A-BFE5-4B5F-8D8E-5F7D55AC6654}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{2C12A38C-5593-4137-9277-B36B0083DA6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{2C12A38C-5593-4137-9277-B36B0083DA6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{E67E9763-B59A-43E8-A30F-4BF4D8134A4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{E67E9763-B59A-43E8-A30F-4BF4D8134A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorSample", "DecoratorSample\DecoratorSample.csproj", "{87910ADA-F0CB-446C-90B6-318ACFF5092E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonSample", "SingletonSample\SingletonSample.csproj", "{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{1CC69020-12FC-46DB-AD42-4B2AB55172AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{E67E9763-B59A-43E8-A30F-4BF4D8134A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E67E9763-B59A-43E8-A30F-4BF4D8134A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E67E9763-B59A-43E8-A30F-4BF4D8134A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87910ADA-F0CB-446C-90B6-318ACFF5092E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87910ADA-F0CB-446C-90B6-318ACFF5092E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87910ADA-F0CB-446C-90B6-318ACFF5092E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87910ADA-F0CB-446C-90B6-318ACFF5092E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC69020-12FC-46DB-AD42-4B2AB55172AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC69020-12FC-46DB-AD42-4B2AB55172AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC69020-12FC-46DB-AD42-4B2AB55172AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC69020-12FC-46DB-AD42-4B2AB55172AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

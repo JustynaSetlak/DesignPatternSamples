@@ -8,6 +8,6 @@ namespace FactoryMethod.Factory
 {
     public interface IChocolateFactory
     {
-        IChocolate CreateChocolateInstance(MainIngredient ingredient);
+        IChocolate CreateChocolate(MainIngredient ingredient);
     }
 }
