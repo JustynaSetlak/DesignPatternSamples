@@ -4,7 +4,7 @@ namespace FactoryDI.Factory
 {
     public class SportyCarFactory : ICarFactory
     {
-        public CarType CarType { get; } = CarType.Sporty;
+        public CarType CarType => CarType.Sporty;
 
         public ICar Create()
         {
