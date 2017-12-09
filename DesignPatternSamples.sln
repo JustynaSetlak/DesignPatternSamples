@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorSample", "Decorato
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonSample", "SingletonSample\SingletonSample.csproj", "{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "Factory\Factory.csproj", "{26B5FCC8-43FC-4F63-BC96-75CEA817BEF4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryDI", "FactoryDI\FactoryDI.csproj", "{0B23E936-B616-452B-9F36-B19FF9885F8B}"
 EndProject
 Global
@@ -55,10 +53,6 @@ Global
 		{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D43F9C9F-BDE1-498C-BA7D-2DF4FA22CC8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26B5FCC8-43FC-4F63-BC96-75CEA817BEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26B5FCC8-43FC-4F63-BC96-75CEA817BEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26B5FCC8-43FC-4F63-BC96-75CEA817BEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26B5FCC8-43FC-4F63-BC96-75CEA817BEF4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B23E936-B616-452B-9F36-B19FF9885F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B23E936-B616-452B-9F36-B19FF9885F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B23E936-B616-452B-9F36-B19FF9885F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU

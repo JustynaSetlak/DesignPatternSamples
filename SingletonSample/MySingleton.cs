@@ -7,6 +7,7 @@ namespace SingletonSample
     public sealed class MySingleton
     {
         private static MySingleton _instance;
+        private static readonly object Padlock = new object();
 
         private MySingleton() {}
 
@@ -14,11 +15,10 @@ namespace SingletonSample
         {
             get
             {
-                if (_instance == null)
+                lock (Padlock)
                 {
-                    _instance = new MySingleton();
+                    return _instance ?? (_instance = new MySingleton());
                 }
-                return _instance;
             }
         }
     }
