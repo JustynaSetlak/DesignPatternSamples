@@ -6,20 +6,11 @@ namespace SingletonSample
 {
     public sealed class MySingleton
     {
-        private static MySingleton _instance;
-        private static readonly object Padlock = new object();
+        private static readonly Lazy<MySingleton> _lazyIstance
+            = new Lazy<MySingleton>(() => new MySingleton());
+
+        public static MySingleton Instance => _lazyIstance.Value;
 
         private MySingleton() {}
-
-        public static MySingleton Instance
-        {
-            get
-            {
-                lock (Padlock)
-                {
-                    return _instance ?? (_instance = new MySingleton());
-                }
-            }
-        }
     }
 }
